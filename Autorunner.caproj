@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Autorunner</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>mq4njje893h0</unique-id>
+    <saved-with-version>20000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>630</width>
+        <height>360</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">iPhone only</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Touch" sid="7209909272801746">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Keyboard" sid="5603468479393947">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite" sid="4500702313982685">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="6903817081693821">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440264010901746" speed="5">
+                    <frame duration="1" hotspotX="0.490196" hotspotY="1.01351" original-source="C:\Users\win7\Desktop\Sem título.png">
+                        <image-point name="Imagepoint 1" x="0.509804" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="leghitbox" sid="2604099250030848">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="time in pixels to delete the hitbox" name="timetodie" sid="939667174043298" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="2849924775094066">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="453872782457894">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4385739458136417" speed="5">
+                    <frame duration="1" hotspotX="-0.0280374" hotspotY="0.470588" original-source="C:\Users\win7\Desktop\playerhit.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="1983911555735953">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3298874741584753">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8380775543665226" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\win7\Desktop\Sem título2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="6142528499473785">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="lixeirahitbox" sid="756609364602137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8712793302488262" speed="5">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="0.5" original-source="C:\Users\win7\Desktop\player.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Overlay" sid="8920206629835046">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="2910468303652295">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9565150006976457" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\win7\Desktop\Sem título.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="9708264032334208">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7369879948732719" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502463" original-source="C:\Users\win7\Desktop\bob simulator\logo.png">
+                        <collision-poly>
+                            <point x="0.0257812" y="0.162562" />
+                            <point x="0.5" y="0.246305" />
+                            <point x="0.917188" y="0.522168" />
+                            <point x="0.913281" y="0.497537" />
+                            <point x="0.964844" y="0.778325" />
+                            <point x="0.5" y="0.931035" />
+                            <point x="0.0109375" y="0.931035" />
+                            <point x="0" y="0.497537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solta" sid="942744541197486">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="hit" sid="4001357242962364" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="1493094625801314">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="791639495529073">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Animation2" pingpong="1" repeatcount="1" repeatto="0" sid="2747130575357967" speed="3">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                </animation>
+                <animation framecount="2" loop="0" name="Animation3" pingpong="0" repeatcount="1" repeatto="0" sid="8462034068360397" speed="15">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trancada" sid="3855568253950247">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="407702076213618">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="3502999817336079">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145897902254146" speed="5">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="1.00515" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="5921690203381324">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1933930336649976" speed="5">
+                    <frame duration="1" hotspotX="0.672656" hotspotY="0.0429688" original-source="C:\Users\win7\Desktop\bob simulator\back.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu" sid="2123745822296567">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="submit" sid="8616083406402804">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Asfalto" sid="6364468598002723">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="9839938415515596">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5234981895253362">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985152359042812" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mattar128\Projetos\bob simulator\asfalto2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bob" sid="547265669046856">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="toppled" sid="4675129396654233" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="3592252030225322">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="7052102337386606">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="2538236585496442" speed="30">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="3279516036885791">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8604081835044058">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3502832378592591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mattar128\Projetos\bob simulator\Sem título (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="2986283524332073">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Text" sid="1244679035914307">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="4">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Audio" uid="9">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="3" />
+    </global-instances>
+    <sounds-folder>
+        <file name="floor.m4a" />
+        <file name="floor.ogg" />
+        <file name="hit.m4a" />
+        <file name="hit.ogg" />
+        <file name="Jump.m4a" />
+        <file name="Jump.ogg" />
+        <file name="lose.m4a" />
+        <file name="lose.ogg" />
+        <file name="foot.m4a" />
+        <file name="foot.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="NULLSLEEP_FEARLESS_FLIGHT.m4a" />
+        <file name="NULLSLEEP_FEARLESS_FLIGHT.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
